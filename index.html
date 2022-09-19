@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversor Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <ul> <h1> 3er Desafio</h1>
+            <li class="p"> Alegre Jorge</li>
+            <li class="p"> Idea: Conversor de Moneda   </li>
+        </ul>
+    </div>
+    
+    <form class="formulario" action="">
+        <p>Hola Bienvenido aqui podras cotizar tu dinero a las distintas variantes de Dolar que predominan en el mercado actualmente</p>
+        
+        <input type="radio" id="uno"> Dolar Oficial
+        <input type="radio" id="dos"> Dolar Blue
+        <input type="radio" id="tres"> Dolar Solidario
+
+        <p>Ingrese el monto que desea cambiar, no menor a (100 pesos)</p>
+
+        <input type="number" id="pesos" min="100" max="100000">
+        <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
+
+    </form>
+
+
+    <script src="./event.js"></script>
+</body>
+</html>
