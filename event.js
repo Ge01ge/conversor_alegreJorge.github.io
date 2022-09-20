@@ -10,9 +10,9 @@
 // console.log(cotiz)
 
 
-let x = parseFloat(document.querySelector('#pesos').Value);
-console.log(x) 
-// aca me tirar el erro NaN, calculo que por eso mismo no me tomas los if
+let x = parseFloat(document.querySelector('#pesos'));
+// console.log(x) 
+// // aca me tirar el erro NaN, calculo que por eso mismo no me tomas los if
 
 resultado = 0;
 oficial = 145;
@@ -20,16 +20,19 @@ blue = 290;
 solidario = 279;
 
 function convertir(){
-
-    if(document.querySelector('#uno').Checked){
-            resultado = x / oficial;
-            alert(`el cambio de "${x} + pesos" a dolares es: ${resultado.toFixed(2)} Dolares "solidario"`); 
+    let x = parseFloat(document.querySelector('#pesos').value);
+    if(document.querySelector('#uno').checked){
         
-    } else if(document.querySelector('#dos').Checked) {
+            resultado = x / oficial;
+            alert(`el cambio de "${x} + pesos" a dolares es: ${resultado.toFixed(2)} Dolares "Ofical"`); 
+        
+    } else if(document.querySelector('#dos').checked) {
+        
             resultado = x / blue;
             alert(`el cambio de "${x} + pesos" a dolares es: ${resultado.toFixed(2)} Dolares "Blue"`); 
         
-    } else if(document.querySelector('#tres').Checked){
+    } else if(document.querySelector('#tres').checked){
+        
             resultado = x / solidario;
             alert(`el cambio de "${x} + pesos" a dolares es: ${resultado.toFixed(2)} Dolares "solidario"`); 
     }else {
